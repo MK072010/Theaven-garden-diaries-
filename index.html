@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thevan Garden Diaries — A Garden Cafe in Shahpura, Jaipur</title>
+<meta name="description" content="Thevan Garden Diaries is a garden cafe in Shahpura, Jaipur — an intimate escape of greenery, slow food and warm evenings. Come for the garden, stay for the memories.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Thevan Garden Diaries — Shahpura, Jaipur">
+<meta property="og:description" content="Where every moment finds its own little corner.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Preload the hero image so it appears as fast as possible -->
+<link rel="preload" as="image" fetchpriority="high" href="g2.png">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Custom cursor (desktop only, decorative) -->
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- Page load curtain -->
+<div class="curtain" aria-hidden="true">
+  <span class="curtain-mark">Thevan Garden Diaries</span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">
+      <span class="nav-mark-line1">Thevan</span>
+      <span class="nav-mark-line2">Garden Diaries</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#story">The Story</a>
+      <a href="#experience">The Experience</a>
+      <a href="menu.html">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Book a Table</a>
+      <a href="#location">Visit</a>
+    </nav>
+
+    <a href="#book" class="nav-cta magnetic">Book a Table</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu panel -->
+<div class="mobile-panel" id="mobilePanel">
+  <nav>
+    <a href="#story">The Story</a>
+    <a href="#experience">The Experience</a>
+    <a href="menu.html">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#book">Book a Table</a>
+    <a href="#location">Visit</a>
+  </nav>
+  <a href="#book" class="mobile-cta">Book a Table</a>
+</div>
+
+<main id="top">
+
+<!-- ============ 1. CINEMATIC HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-media" data-parallax="0.25">
+    <img
+      src="g2.png"
+      alt="Sunlit garden courtyard with lush greenery, the setting of Thevan Garden Diaries"
+      loading="eager" fetchpriority="high" decoding="async">
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-kicker reveal-line">Shahpura &middot; Jaipur</p>
+    <h1 class="hero-title">
+      <span class="reveal-line hero-title-1">Thevan</span>
+      <span class="reveal-line hero-title-2">Garden Diaries</span>
+    </h1>
+    <p class="hero-tagline reveal-line">Where every moment finds its own little corner.</p>
+
+    <div class="hero-ctas reveal-line">
+      <a href="#experience" class="btn btn-primary magnetic">Explore the Haven</a>
+      <a href="#location" class="btn btn-ghost magnetic">Find Us</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span class="scroll-cue-line"></span>
+    <span class="scroll-cue-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ============ MARQUEE BAND ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Slow Mornings</span><span class="marquee-dot">&middot;</span>
+    <span>Garden Dining</span><span class="marquee-dot">&middot;</span>
+    <span>Candlelit Evenings</span><span class="marquee-dot">&middot;</span>
+    <span>Quiet Afternoons</span><span class="marquee-dot">&middot;</span>
+    <span>Slow Mornings</span><span class="marquee-dot">&middot;</span>
+    <span>Garden Dining</span><span class="marquee-dot">&middot;</span>
+    <span>Candlelit Evenings</span><span class="marquee-dot">&middot;</span>
+    <span>Quiet Afternoons</span><span class="marquee-dot">&middot;</span>
+  </div>
+</div>
+
+<!-- ============ 2. STORY ============ -->
+<section class="story" id="story">
+  <svg class="deco-leaf deco-leaf-story" data-parallax="0.06" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M100 190C100 190 20 150 20 80C20 30 60 10 100 10C140 10 180 30 180 80C180 150 100 190 100 190Z" stroke="currentColor" stroke-width="0.8"/>
+    <path d="M100 10V190M100 60C70 70 40 65 20 80M100 60C130 70 160 65 180 80M100 110C65 118 35 112 22 122M100 110C135 118 165 112 178 122" stroke="currentColor" stroke-width="0.6"/>
+  </svg>
+  <div class="story-grid">
+    <div class="story-copy">
+      <p class="eyebrow-soft">Our story</p>
+      <h2 class="story-heading heading-accent">
+        A garden that grew<br>
+        into a gathering place.
+      </h2>
+      <p class="story-text story-text-lead">
+        Tucked into the quiet lanes of Shahpura, Thevan Garden Diaries began as a patch of
+        green and a handful of chairs under the trees. What stayed the same as it grew is the
+        feeling of arriving somewhere unhurried — where the branches do the decorating, the
+        light changes the mood through the day, and nobody is in a rush to hand you the bill.
+      </p>
+      <p class="story-text">
+        It's less a restaurant with a garden, and more a garden that happens to serve very
+        good food. Every table finds its own pocket of shade, its own view, its own quiet.
+      </p>
+      <div class="story-sign">
+        <span class="story-sign-line"></span>
+        <span>Shahpura, Jaipur</span>
+      </div>
+    </div>
+
+    <div class="story-visual">
+      <img class="story-img story-img-back"
+        src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=65&w=900&auto=format&fit=crop"
+        alt="Garden pathway lined with potted plants and string lights" loading="lazy" decoding="async">
+      <img class="story-img story-img-front"
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=65&w=700&auto=format&fit=crop"
+        alt="Close view of tropical leaves and dappled sunlight" loading="lazy" decoding="async">
+      <span class="story-frame" aria-hidden="true"></span>
+      <span class="story-caption">Shahpura, Jaipur</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. THE EXPERIENCE ============ -->
+<section class="experience" id="experience">
+  <p class="eyebrow-soft experience-eyebrow">The experience</p>
+  <h2 class="section-heading experience-heading heading-accent">Four ways to lose track of time.</h2>
+
+  <div class="exp-panel" data-parallax="0.12">
+    <img src="g2.png"
+      alt="Outdoor garden dining tables under trees" loading="lazy" decoding="async">
+    <div class="exp-panel-copy">
+      <span class="exp-index">Garden Dining</span>
+      <p>Tables scattered under old trees, canopies of leaves standing in for a ceiling,
+        and just enough distance between one conversation and the next.</p>
+    </div>
+  </div>
+
+  <div class="exp-panel exp-panel-reverse" data-parallax="0.12">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=65&w=1200&auto=format&fit=crop"
+      alt="Coffee and food beautifully plated on a wooden table" loading="lazy" decoding="async">
+    <div class="exp-panel-copy">
+      <span class="exp-index">Food &amp; Beverages</span>
+      <p>Slow food, seasonal ingredients and a menu that changes with what the garden and
+        the market are willing to give up that day.</p>
+    </div>
+  </div>
+
+  <div class="exp-panel" data-parallax="0.12">
+    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=65&w=1200&auto=format&fit=crop"
+      alt="Warm string lights over a garden seating area at dusk" loading="lazy" decoding="async">
+    <div class="exp-panel-copy">
+      <span class="exp-index">Relaxed Evenings</span>
+      <p>As the light softens, the lanterns take over — long dinners, low music, and no
+        particular reason to check the time.</p>
+    </div>
+  </div>
+
+  <div class="exp-panel exp-panel-reverse" data-parallax="0.12">
+    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=65&w=1200&auto=format&fit=crop"
+      alt="Close, intimate moment shared between friends at a garden table" loading="lazy" decoding="async">
+    <div class="exp-panel-copy">
+      <span class="exp-index">Beautiful Moments</span>
+      <p>Anniversaries, quiet mornings, long-overdue catch-ups — the garden has a way of
+        making all of them feel a little more special.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOTE FROM THE GARDEN ============ -->
+<section class="note">
+  <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=65&w=1400&auto=format&fit=crop"
+    alt="Soft green foliage backdrop" loading="lazy" data-parallax="0.1">
+  <div class="note-scrim"></div>
+  <div class="note-panel">
+    <span class="note-mark">&#10077;</span>
+    <p class="note-quote">The garden doesn't ask you to hurry.<br>Neither do we.</p>
+    <span class="note-attribution">A note from the garden</span>
+  </div>
+</section>
+
+<!-- ============ 4. SIGNATURE MENU ============ -->
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <p class="eyebrow-soft">A taste of the garden</p>
+    <h2 class="section-heading heading-accent">The Signature Menu</h2>
+    <p class="menu-note">A sample of what to expect — the full, current menu with prices
+      is available in-house and will be updated here shortly.</p>
+  </div>
+
+  <div class="menu-columns">
+    <div class="menu-col">
+      <h3 class="menu-col-title">Morning &amp; Coffee</h3>
+      <ul class="menu-list">
+        <li><span>Garden-brewed filter coffee</span><em>sample</em></li>
+        <li><span>Masala chai, slow-simmered</span><em>sample</em></li>
+        <li><span>Seasonal fruit &amp; curd bowl</span><em>sample</em></li>
+        <li><span>Stuffed paratha, homestyle</span><em>sample</em></li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <h3 class="menu-col-title">All-Day Plates</h3>
+      <ul class="menu-list">
+        <li><span>Garden vegetable thali</span><em>sample</em></li>
+        <li><span>Wood-fired flatbreads</span><em>sample</em></li>
+        <li><span>Herb &amp; paneer skewers</span><em>sample</em></li>
+        <li><span>Slow-cooked dal, ghee tempered</span><em>sample</em></li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <h3 class="menu-col-title">Evenings &amp; Sweet</h3>
+      <ul class="menu-list">
+        <li><span>Rose &amp; saffron kulfi</span><em>sample</em></li>
+        <li><span>Warm gulab jamun, garden honey</span><em>sample</em></li>
+        <li><span>Iced hibiscus cooler</span><em>sample</em></li>
+        <li><span>Evening chai &amp; biscuits</span><em>sample</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="menu.html" class="btn btn-outline menu-cta magnetic">View the Menu</a>
+</section>
+
+<!-- ============ BOOK A TABLE ============ -->
+<section class="book" id="book">
+  <p class="eyebrow-soft book-eyebrow">Reserve your table</p>
+  <h2 class="section-heading book-heading heading-accent">Book a table in the garden.</h2>
+  <p class="book-sub">Fill in your details and we'll confirm it over WhatsApp — usually within a few minutes.</p>
+
+  <form class="book-form" id="bookForm">
+    <div class="book-field">
+      <label for="bookName">Name</label>
+      <input type="text" id="bookName" name="name" placeholder="Your name" required>
+    </div>
+    <div class="book-field">
+      <label for="bookPhone">Phone number</label>
+      <input type="tel" id="bookPhone" name="phone" placeholder="Your phone number" required>
+    </div>
+    <div class="book-field">
+      <label for="bookDate">Date</label>
+      <input type="date" id="bookDate" name="date" required>
+    </div>
+    <div class="book-field">
+      <label for="bookTime">Time</label>
+      <input type="time" id="bookTime" name="time" min="07:00" max="21:00" required>
+    </div>
+    <div class="book-field">
+      <label for="bookGuests">Guests</label>
+      <input type="number" id="bookGuests" name="guests" min="1" max="30" placeholder="Number of guests" required>
+    </div>
+    <div class="book-field book-field-full">
+      <label for="bookNote">Special request (optional)</label>
+      <textarea id="bookNote" name="note" rows="2" placeholder="Birthday, window table, dietary needs..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary book-submit magnetic">Send Request on WhatsApp</button>
+    <p class="book-note">We're open 7:00 AM – 9:00 PM daily. Tapping the button opens WhatsApp with your details filled in — just hit send.</p>
+  </form>
+</section>
+
+<!-- ============ 5. GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <p class="eyebrow-soft gallery-eyebrow">In pictures</p>
+  <h2 class="section-heading gallery-heading heading-accent">Little corners of the garden.</h2>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <figure class="g-item g-tall" tabindex="0" role="button" aria-label="View larger image">
+      <img src="g1.png"
+        alt="Lush garden seating nook with lanterns" loading="lazy"
+        data-full="g1.png">
+    </figure>
+    <figure class="g-item g-wide" tabindex="0" role="button" aria-label="View larger image">
+      <img src="g2.png"
+        alt="Wooden table set for a garden meal" loading="lazy"
+        data-full="g2.png">
+      <figcaption>Table for two, by the jasmine</figcaption>
+    </figure>
+    <figure class="g-item" tabindex="0" role="button" aria-label="View larger image">
+      <img src="g3.jpg"
+        alt="Close-up of tropical garden foliage" loading="lazy"
+        data-full="g3.jpg">
+    </figure>
+    <figure class="g-item" tabindex="0" role="button" aria-label="View larger image">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=65&w=700&auto=format&fit=crop"
+        alt="Freshly brewed coffee on a rustic table" loading="lazy"
+        data-full="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=70&w=1600&auto=format&fit=crop">
+      <figcaption>Slow mornings</figcaption>
+    </figure>
+    <figure class="g-item g-tall" tabindex="0" role="button" aria-label="View larger image">
+      <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=65&w=900&auto=format&fit=crop"
+        alt="Garden path with hanging string lights at dusk" loading="lazy"
+        data-full="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=70&w=1600&auto=format&fit=crop">
+    </figure>
+    <figure class="g-item g-wide" tabindex="0" role="button" aria-label="View larger image">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=65&w=1100&auto=format&fit=crop"
+        alt="Friends sharing a warm evening at the garden cafe" loading="lazy"
+        data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=70&w=1600&auto=format&fit=crop">
+    </figure>
+  </div>
+</section>
+
+<!-- Gallery lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ============ 6. A PLACE TO PAUSE ============ -->
+<section class="pause" data-parallax="0.15">
+  <img src="https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?q=65&w=1400&auto=format&fit=crop"
+    alt="Sunlight filtering through dense green garden canopy" loading="lazy" decoding="async">
+  <div class="pause-scrim"></div>
+  <div class="pause-copy">
+    <h2>A place to pause.</h2>
+    <p>No screens on the tables, no rush at the door. Just green in every direction,
+      and the quiet permission to stay a little longer than planned.</p>
+  </div>
+</section>
+
+<!-- ============ 7. LOCATION ============ -->
+<section class="location" id="location">
+  <div class="location-grid">
+    <div class="location-copy">
+      <p class="eyebrow-soft">Visit the garden</p>
+      <h2 class="section-heading heading-accent">Thevan Garden Diaries</h2>
+      <p class="location-sub">Shahpura, Rajasthan</p>
+
+      <dl class="location-details">
+        <div>
+          <dt>Address</dt>
+          <dd>Khatedi Moad, Shahpura, Jaipur, Rajasthan 303103</dd>
+        </div>
+        <div>
+          <dt>Hours</dt>
+          <dd>7:00 AM – 9:00 PM, daily</dd>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd>[Phone number — to be added]</dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/thevan_garden_diaries?stkn=ZTM1d3docHNldWFt" target="_blank" rel="noopener">@thevan_garden_diaries</a></dd>
+        </div>
+      </dl>
+
+      <a href="https://www.google.com/maps/place/Fashion+Park,+Shahpura,+Rajasthan+303103/@27.530593,76.6197236,7z/data=!4m2!3m1!1s0x396d0e2f8e407d4f:0xeb1539d40b9dfa87" target="_blank" rel="noopener" class="btn btn-primary magnetic">Get Directions</a>
+    </div>
+
+    <div class="location-map">
+      <iframe
+        title="Thevan Garden Diaries location on Google Maps"
+        src="https://www.google.com/maps?q=27.530593,76.6197236&z=16&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. FINAL CTA ============ -->
+<section class="final-cta" data-parallax="0.2">
+  <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=65&w=1400&auto=format&fit=crop"
+    alt="Evening garden glowing under warm string lights" loading="lazy" decoding="async">
+  <div class="final-cta-scrim"></div>
+  <div class="final-cta-content">
+    <span class="final-cta-hairline" aria-hidden="true"></span>
+    <h2>Come for the garden.<br>Stay for the memories.</h2>
+    <a href="#location" class="btn btn-primary btn-large magnetic">Plan Your Visit</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 9. FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-mark">
+      <span>Thevan</span>
+      <span>Garden Diaries</span>
+    </div>
+
+    <nav class="footer-links">
+      <a href="#story">The Story</a>
+      <a href="#experience">The Experience</a>
+      <a href="menu.html">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Book a Table</a>
+      <a href="#location">Visit</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/thevan_garden_diaries?stkn=ZTM1d3docHNldWFt" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.google.com/maps/place/Fashion+Park,+Shahpura,+Rajasthan+303103/@27.530593,76.6197236,7z/data=!4m2!3m1!1s0x396d0e2f8e407d4f:0xeb1539d40b9dfa87" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Khatedi Moad, Shahpura, Jaipur &middot; Thevan Garden Diaries</p>
+    <p>&copy; <span id="year"></span> Thevan Garden Diaries. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="#" id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.004 3C9.376 3 4 8.373 4 15c0 2.34.687 4.52 1.87 6.35L4 29l7.82-1.84A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.7c-1.98 0-3.83-.55-5.41-1.5l-.39-.23-4.64 1.09 1.12-4.52-.25-.4A9.66 9.66 0 0 1 5.3 15c0-5.9 4.8-10.7 10.7-10.7S26.7 9.1 26.7 15 21.9 24.7 16.004 24.7Zm5.87-8.02c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.5-.16-.72.16-.21.31-.82 1.04-1 1.26-.19.21-.37.24-.68.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.31-.02-.48.14-.64.14-.14.32-.37.48-.55.16-.19.21-.31.32-.53.11-.21.05-.4-.03-.55-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.55.08-.83.4-.29.31-1.09 1.06-1.09 2.6s1.11 3.02 1.27 3.23c.16.21 2.19 3.34 5.3 4.68.74.32 1.32.51 1.77.65.74.24 1.42.2 1.95.13.6-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.14-.29-.21-.61-.37Z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
