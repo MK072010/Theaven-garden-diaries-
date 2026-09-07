@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Menu — Thevan Garden Diaries, Shahpura, Jaipur</title>
+<meta name="description" content="Browse the menu at Thevan Garden Diaries, a garden cafe in Shahpura, Jaipur — morning brews, all-day plates, evening sweets and garden coolers.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Preload the hero image so it appears as fast as possible -->
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=70&w=1400&auto=format&fit=crop">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<div class="curtain" aria-hidden="true">
+  <span class="curtain-mark">The Signature Menu</span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav is-scrolled" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">
+      <span class="nav-mark-line1">Thevan</span>
+      <span class="nav-mark-line2">Garden Diaries</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#story">The Story</a>
+      <a href="index.html#experience">The Experience</a>
+      <a href="menu.html" class="is-active">Menu</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#book">Book a Table</a>
+      <a href="index.html#location">Visit</a>
+    </nav>
+
+    <a href="index.html#book" class="nav-cta magnetic">Book a Table</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <nav>
+    <a href="index.html#story">The Story</a>
+    <a href="index.html#experience">The Experience</a>
+    <a href="menu.html">Menu</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#book">Book a Table</a>
+    <a href="index.html#location">Visit</a>
+  </nav>
+  <a href="index.html#book" class="mobile-cta">Book a Table</a>
+</div>
+
+<main>
+
+<!-- ============ MENU HERO ============ -->
+<section class="menu-hero">
+  <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=70&w=1400&auto=format&fit=crop"
+    alt="Close view of tropical garden leaves" loading="eager" fetchpriority="high" decoding="async">
+  <div class="menu-hero-scrim"></div>
+  <div class="menu-hero-content">
+    <p class="hero-kicker">Shahpura &middot; Jaipur</p>
+    <h1>The Signature Menu</h1>
+    <p class="menu-hero-tagline">Slow food, seasonal ingredients, and a table that never rushes you.</p>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER STRIP ============ -->
+<div class="menu-note-strip">
+  <p>Dishes and pricing shown below are indicative sample listings for design purposes —
+    the current, confirmed menu is available in-house and will be updated here shortly.</p>
+</div>
+
+<!-- ============ CATEGORY TABS ============ -->
+<nav class="menu-tabs" id="menuTabs" aria-label="Menu categories">
+  <button class="menu-tab is-active" data-target="morning">Morning &amp; Coffee</button>
+  <button class="menu-tab" data-target="plates">All-Day Plates</button>
+  <button class="menu-tab" data-target="grill">Garden Grill</button>
+  <button class="menu-tab" data-target="sweet">Evenings &amp; Sweet</button>
+  <button class="menu-tab" data-target="drinks">Coolers &amp; Beverages</button>
+</nav>
+
+<div class="menu-legend">
+  <span><i class="dot dot-veg"></i> Vegetarian</span>
+  <span><i class="dot dot-nonveg"></i> Non-Vegetarian</span>
+  <span class="menu-legend-note">*Sample pricing, editable</span>
+</div>
+
+<!-- ============ MENU SECTIONS ============ -->
+<section class="menu-section-block">
+
+  <div class="menu-category is-active" id="morning">
+    <div class="menu-category-head">
+      <h2>Morning &amp; Coffee</h2>
+      <p>Slow brews and light plates to ease into the garden.</p>
+    </div>
+    <div class="menu-item-grid">
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=65&w=500&auto=format&fit=crop" alt="Garden-brewed filter coffee" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Garden-Brewed Filter Coffee</h3>
+          <p>Slow filtered, served the classic South-Indian way.</p>
+        </div>
+        <span class="menu-price">₹120*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=65&w=500&auto=format&fit=crop" alt="Masala chai in a kettle" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Masala Chai, Slow-Simmered</h3>
+          <p>Whole spices, simmered low, poured hot.</p>
+        </div>
+        <span class="menu-price">₹90*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=65&w=500&auto=format&fit=crop" alt="Seasonal fruit and curd bowl" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Seasonal Fruit &amp; Curd Bowl</h3>
+          <p>Whatever the season is offering, with fresh set curd.</p>
+        </div>
+        <span class="menu-price">₹180*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=65&w=500&auto=format&fit=crop" alt="Stuffed paratha with butter" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Stuffed Paratha, Homestyle</h3>
+          <p>Griddled fresh, served with curd and pickle.</p>
+        </div>
+        <span class="menu-price">₹160*</span>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="menu-category" id="plates">
+    <div class="menu-category-head">
+      <h2>All-Day Plates</h2>
+      <p>Unhurried, generous, meant for sharing.</p>
+    </div>
+    <div class="menu-item-grid">
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=65&w=500&auto=format&fit=crop" alt="Garden vegetable thali" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Garden Vegetable Thali</h3>
+          <p>A rotating spread of the day's vegetables, dal and rice.</p>
+        </div>
+        <span class="menu-price">₹340*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=65&w=500&auto=format&fit=crop" alt="Wood-fired flatbreads" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Wood-Fired Flatbreads</h3>
+          <p>Baked to order, brushed with garden herb butter.</p>
+        </div>
+        <span class="menu-price">₹220*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=65&w=500&auto=format&fit=crop" alt="Herb and paneer skewers" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Herb &amp; Paneer Skewers</h3>
+          <p>Marinated overnight, finished on open flame.</p>
+        </div>
+        <span class="menu-price">₹280*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=65&w=500&auto=format&fit=crop" alt="Slow-cooked dal with ghee" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Slow-Cooked Dal, Ghee Tempered</h3>
+          <p>Twelve-hour simmer, finished tableside with ghee.</p>
+        </div>
+        <span class="menu-price">₹240*</span>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="menu-category" id="grill">
+    <div class="menu-category-head">
+      <h2>Garden Grill</h2>
+      <p>For evenings that call for something heartier.</p>
+    </div>
+    <div class="menu-item-grid">
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=65&w=500&auto=format&fit=crop" alt="Tandoori grilled chicken skewers" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-nonveg"></i> Tandoori Chicken Skewers</h3>
+          <p>Char-grilled over charcoal, smoked in the open air.</p>
+        </div>
+        <span class="menu-price">₹380*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=65&w=500&auto=format&fit=crop" alt="Grilled fish fillet with herbs" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-nonveg"></i> Herb-Grilled Fish</h3>
+          <p>Market-fresh catch, finished with garden herbs.</p>
+        </div>
+        <span class="menu-price">₹420*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=65&w=500&auto=format&fit=crop" alt="Grilled vegetable platter" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Charcoal Vegetable Platter</h3>
+          <p>Seasonal vegetables, smoked and finished with chutney.</p>
+        </div>
+        <span class="menu-price">₹300*</span>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="menu-category" id="sweet">
+    <div class="menu-category-head">
+      <h2>Evenings &amp; Sweet</h2>
+      <p>A little something for after.</p>
+    </div>
+    <div class="menu-item-grid">
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?q=65&w=500&auto=format&fit=crop" alt="Rose and saffron kulfi" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Rose &amp; Saffron Kulfi</h3>
+          <p>Set slow, finished with a thread of saffron.</p>
+        </div>
+        <span class="menu-price">₹150*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1601303516361-b0dd53f7a5ba?q=65&w=500&auto=format&fit=crop" alt="Warm gulab jamun in syrup" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Warm Gulab Jamun, Garden Honey</h3>
+          <p>Served warm, finished with a drizzle of honey.</p>
+        </div>
+        <span class="menu-price">₹140*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=65&w=500&auto=format&fit=crop" alt="Evening chai with biscuits" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Evening Chai &amp; Biscuits</h3>
+          <p>The unofficial end-of-day ritual, on the house mood.</p>
+        </div>
+        <span class="menu-price">₹110*</span>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="menu-category" id="drinks">
+    <div class="menu-category-head">
+      <h2>Coolers &amp; Beverages</h2>
+      <p>Something cold for the warmer afternoons.</p>
+    </div>
+    <div class="menu-item-grid">
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=65&w=500&auto=format&fit=crop" alt="Iced hibiscus cooler" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Iced Hibiscus Cooler</h3>
+          <p>Steeped, chilled, finished with mint from the garden.</p>
+        </div>
+        <span class="menu-price">₹160*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=65&w=500&auto=format&fit=crop" alt="Fresh lime soda" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Fresh Lime, Sweet or Salted</h3>
+          <p>Hand-pressed, made to order.</p>
+        </div>
+        <span class="menu-price">₹100*</span>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=65&w=500&auto=format&fit=crop" alt="Buttermilk in a copper glass" loading="lazy" decoding="async">
+        <div class="menu-item-copy">
+          <h3><i class="dot dot-veg"></i> Spiced Buttermilk</h3>
+          <p>Churned fresh, tempered with curry leaf.</p>
+        </div>
+        <span class="menu-price">₹90*</span>
+      </article>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ MENU CTA ============ -->
+<section class="menu-cta-band" data-parallax="0.15">
+  <img src="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?q=65&w=1200&auto=format&fit=crop" alt="Garden courtyard in warm light" loading="lazy" decoding="async">
+  <div class="menu-cta-scrim"></div>
+  <div class="menu-cta-content">
+    <h2>Best enjoyed in person,<br>under the trees.</h2>
+    <a href="index.html#location" class="btn btn-primary btn-large magnetic">Plan Your Visit</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-mark">
+      <span>Thevan</span>
+      <span>Garden Diaries</span>
+    </div>
+
+    <nav class="footer-links">
+      <a href="index.html#story">The Story</a>
+      <a href="index.html#experience">The Experience</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#book">Book a Table</a>
+      <a href="index.html#location">Visit</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/thevan_garden_diaries?stkn=ZTM1d3docHNldWFt" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.google.com/maps/place/Fashion+Park,+Shahpura,+Rajasthan+303103/@27.530593,76.6197236,7z/data=!4m2!3m1!1s0x396d0e2f8e407d4f:0xeb1539d40b9dfa87" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Khatedi Moad, Shahpura, Jaipur &middot; Thevan Garden Diaries</p>
+    <p>&copy; <span id="year"></span> Thevan Garden Diaries. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="#" id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.004 3C9.376 3 4 8.373 4 15c0 2.34.687 4.52 1.87 6.35L4 29l7.82-1.84A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.7c-1.98 0-3.83-.55-5.41-1.5l-.39-.23-4.64 1.09 1.12-4.52-.25-.4A9.66 9.66 0 0 1 5.3 15c0-5.9 4.8-10.7 10.7-10.7S26.7 9.1 26.7 15 21.9 24.7 16.004 24.7Zm5.87-8.02c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.5-.16-.72.16-.21.31-.82 1.04-1 1.26-.19.21-.37.24-.68.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.31-.02-.48.14-.64.14-.14.32-.37.48-.55.16-.19.21-.31.32-.53.11-.21.05-.4-.03-.55-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.55.08-.83.4-.29.31-1.09 1.06-1.09 2.6s1.11 3.02 1.27 3.23c.16.21 2.19 3.34 5.3 4.68.74.32 1.32.51 1.77.65.74.24 1.42.2 1.95.13.6-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.14-.29-.21-.61-.37Z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>
